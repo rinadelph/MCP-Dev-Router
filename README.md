@@ -91,6 +91,34 @@ This router enables a smooth development workflow:
 - `POST /backends` - Add backend
 - `DELETE /backends?name=<name>` - Remove backend
 
+## Management Tools
+
+### Interactive TUI
+
+```bash
+# Launch interactive terminal UI
+python router_manager.py
+
+# Or via CLI
+python router_cli.py tui
+```
+
+### Command Line Interface
+
+```bash
+# Show status
+python router_cli.py status
+
+# Add backend
+python router_cli.py add my-server localhost:8080
+
+# Remove backend  
+python router_cli.py remove my-server
+
+# List backends
+python router_cli.py list
+```
+
 ## Requirements
 
 - Python 3.12+
